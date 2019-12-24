@@ -1,0 +1,16 @@
+
+los permisos necesarios son los siguientes
+"autoscaling:SetDesiredCapacity"
+
+Necesitas crear algo similar al siguiente json dentro de IAM rol
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "autoscaling:SetDesiredCapacity",
+            "Resource": "*"
+        }
+    ]
+}
+

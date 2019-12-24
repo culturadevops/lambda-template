@@ -1,0 +1,22 @@
+
+los permisos necesarios para son los siguientes
+"ec2:RebootInstances",
+"ec2:Start*",
+"ec2:Stop*"
+
+Necesitas crear algo similar al siguiente json dentro de IAM rol
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                    "ec2:RebootInstances",
+                    "ec2:Start*",
+                    "ec2:Stop*"
+                ],
+            "Resource": "*"
+        }
+    ]
+}
+

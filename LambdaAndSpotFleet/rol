@@ -1,0 +1,20 @@
+
+los permisos necesarios para son los siguientes
+"ec2:DescribeSpotFleetRequests",
+"ec2:ModifySpotFleetRequest"
+
+Necesitas crear algo similar al siguiente json dentro de IAM rol
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:DescribeSpotFleetRequests",
+                "ec2:ModifySpotFleetRequest"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
+

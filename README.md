@@ -6,6 +6,9 @@ https://www.youtube.com/channel/UCfJ67eVA7DkKbbIF5ceJDMA?view_as=subscriber  o h
 
 
 Indice
-
+cloudformation de lambda y apigategay basico
 Apagar Instancias EC2
 Iniciar Instancias EC2
+Apagar Spot intance 
+Iniciar Stop instance
+Apagar 
